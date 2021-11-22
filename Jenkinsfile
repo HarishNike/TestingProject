@@ -6,7 +6,7 @@ agent any
 stages {
 stage ('Compile Stage') {
 steps {
-bat 'mvn clean compile'
+bat 'mvn -B -U -s C:\\talend\\TOS_DI-Win32-20200219_1130-V7.3.1\\configuration\\maven_user_settings.xml install -P default-settings'
 
 }
 }
